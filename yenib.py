@@ -21,6 +21,6 @@ async def heh(ctx, count_heh = 5):
 @bot.command(name='bot')
 async def _bot(ctx):
     """Is the bot cool?"""
-    await ctx.send('Yes, the bot is cool.')
+    await ctx.send('Evet, bot çok havalı.')
 
 bot.run("token")
