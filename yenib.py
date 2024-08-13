@@ -30,6 +30,6 @@ async def mem(ctx):
 @bot.command(name='bot')
 async def _bot(ctx):
     """Is the bot cool?"""
-    await ctx.send('Evet, bot çok havalı.')
+    await ctx.send('Evet, Tevfiğin botu çok havalı.')
 
-bot.run("TOKEN")
+bot.run("Token")
