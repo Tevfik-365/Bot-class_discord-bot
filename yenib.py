@@ -13,7 +13,7 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
 @bot.command()
-async def çöpler(ctx):
+async def dönüşüm(ctx):
     with open(r'm2l1\m2l2\geri-donusum-kutulari.jpg', 'rb') as f:
         picture = discord.File(f)
     await ctx.send(file=picture)
