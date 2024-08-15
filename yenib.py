@@ -18,8 +18,10 @@ async def dönüşüm(ctx):
         picture = discord.File(f)
     await ctx.send(file=picture)
 @bot.command()
-async def heh(ctx, count_heh = 5):
-    await ctx.send("he" * count_heh)
+async def birazgülolum(ctx):
+    with open(r'm2l1\png-transparent-smile-emoji-face-mouth-perspiration-anxious-face-smiley-emoticon.png', 'rb') as f:
+        gulucuk = discord.File(f)
+    await ctx.send(file=gulucuk)
 @bot.command()
 async def bayrak(ctx):
     with open(r'm2l1\Unh1OwPF_400x400.jpg', 'rb') as f:
@@ -27,6 +29,21 @@ async def bayrak(ctx):
         picture = discord.File(f)
    # Daha sonra bu dosyayı bir parametre olarak gönderebiliriz!
     await ctx.send(file=picture)
+@bot.command()
+async def izmirmarş(ctx):
+    with open(r'm2l1\Haluk Levent - İzmir Marşı.mp3', 'rb') as f:
+        sarki = discord.File(f)
+    await ctx.send(file=sarki)
+@bot.command()
+async def çanakkalemarş(ctx):
+    with open(r'm2l1\Çanakkale içinde aynalı çarşı, ana ben gidiyorum düşmana karşı .....mp3', 'rb') as f:
+        çanakkale = discord.File(f)
+    await ctx.send(file=çanakkale)
+@bot.command()
+async def istiklalmarş(ctx):
+    with open(r'm2l1\İstiklal Marşı.mp3', 'rb') as f:
+        mars = discord.File(f)
+    await ctx.send(file=mars)
 @bot.command()
 async def atam(ctx):
     with open(r'm2l1\Ataturk.jpg', 'rb') as f:
