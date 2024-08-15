@@ -1,4 +1,5 @@
 import discord
+import random
 from discord.ext import commands
 
 intents = discord.Intents.default()
@@ -11,7 +12,7 @@ async def on_ready():
     print(f'{bot.user} olarak giriş yaptık')
 @bot.command()
 async def merhaba(ctx):
-    await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
+    await ctx.send(f'*Merhaba!* Ben {bot.user}, bir Discord sohbet botuyum! 😄')
 @bot.command()
 async def dönüşüm(ctx):
     with open(r'm2l1\m2l2\geri-donusum-kutulari.jpg', 'rb') as f:
@@ -49,9 +50,23 @@ async def atam(ctx):
     with open(r'm2l1\Ataturk.jpg', 'rb') as f:
         resim = discord.File(f)
     await ctx.send(file=resim)
+@bot.event
+async def on_command_error(ctx, error):
+        await ctx.send("Oops! Bir şeyler ters gitti! 😅")
+@bot.command()
+async def nasılsın(ctx):
+    cevaplar = [
+        "Harikayım, teşekkür ederim! 😄",
+        "Biraz yorgunum, ama iyiyim! 😊",
+        "Muhteşemim! Sen nasılsın? 😎"
+    ]
+    await ctx.send(random.choice(cevaplar))
+@bot.command()
+async def benimresmim(ctx):
+    await ctx.send(bot.user.avatar.url)
 @bot.command(name='bot')
 async def _bot(ctx):
-    """Is the bot cool?"""
     await ctx.send('Evet, Tevfiğin botu çok havalı.')
+
 
 bot.run("Token")
