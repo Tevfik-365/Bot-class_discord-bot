@@ -34,7 +34,7 @@ async def kendini_tanıt(ctx):
     await ctx.send(intro)
 @bot.command()
 async def birazgülolum(ctx):
-    with open(r'flag.jpg', 'rb') as f:
+    with open(r'smile.jpg', 'rb') as f:
         gulucuk = discord.File(f)
     await ctx.send(file=gulucuk)
 @bot.command()
@@ -42,19 +42,19 @@ async def Tekmil_ver_asker(ctx):
     await ctx.send(f"Samsun/Tekkeköy SAĞOLUN! {ctx.author.name}")
 @bot.command()
 async def bayrak_göster_asker(ctx):
-    with open(r'm2l1\Unh1OwPF_400x400.jpg', 'rb') as f:
+    with open(r'flag.jpg', 'rb') as f:
         # Dönüştürülen Discord kütüphane dosyasını bu değişkende saklayalım!
         picture = discord.File(f)
    # Daha sonra bu dosyayı bir parametre olarak gönderebiliriz!
     await ctx.send(file=picture)
 @bot.command()
 async def izmirmarş(ctx):
-    with open(r'm2l1\Haluk Levent - İzmir Marşı.mp3', 'rb') as f:
+    with open(r'Haluk Levent - İzmir Marşı.mp3', 'rb') as f:
         sarki = discord.File(f)
     await ctx.send(file=sarki)
 @bot.command()
 async def çanakkalemarş(ctx):
-    with open(r'm2l1\Çanakkale içinde aynalı çarşı, ana ben gidiyorum düşmana karşı .....mp3', 'rb') as f:
+    with open(r'Çanakkale içinde aynalı çarşı, ana ben gidiyorum düşmana karşı .....mp3', 'rb') as f:
         çanakkale = discord.File(f)
     await ctx.send(file=çanakkale)
 @bot.command()
@@ -94,12 +94,12 @@ async def yapay_zeka(ctx):
     await ctx.send(random.choice(yapay_zekalar))
 @bot.command()
 async def istiklalmarş(ctx):
-    with open(r'm2l1\İstiklal Marşı.mp3', 'rb') as f:
+    with open(r'İstiklal Marşı.mp3', 'rb') as f:
         mars = discord.File(f)
     await ctx.send(file=mars)
 @bot.command()
 async def atam(ctx):
-    with open(r'm2l1\Ataturk.jpg', 'rb') as f:
+    with open(r'Ataturk.jpg', 'rb') as f:
         resim = discord.File(f)
     await ctx.send(file=resim)
 @bot.command()
