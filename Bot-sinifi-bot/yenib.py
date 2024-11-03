@@ -26,11 +26,6 @@ async def on_command_error(ctx, error):
 async def merhaba_asker(ctx):
     await ctx.send(f'*Sağol!* Ben {bot.user}, bir Discord KOMANDO botuyum!')
 @bot.command()
-async def dönüşüm(ctx):
-    with open(r'm2l1\geri-donusum-kutulari.jpg', 'rb') as f:
-        picture = discord.File(f)
-    await ctx.send(file=picture)
-@bot.command()
 async def kendini_tanıt(ctx):
     intro = (
         "Ben bir KOMANDO BOTUM, "
