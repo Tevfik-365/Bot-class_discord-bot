@@ -1,1 +1,1 @@
-This discord bot codes are made in Turkish on a TURKISH KOMANDO (According to a Turk). Libraries (discord, python, random, traceback) it is working with VSC (Visual Studio Code).
+These discord bot codes were made in Turkish on a TURKISH KOMANDO (according to a Turk). Libraries (discord, python, random, traceback) work with VSC (Visual Studio Code).
