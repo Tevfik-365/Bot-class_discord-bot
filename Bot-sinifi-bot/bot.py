@@ -34,7 +34,7 @@ async def kendini_tanıt(ctx):
     await ctx.send(intro)
 @bot.command()
 async def birazgülolum(ctx):
-    with open(r'm2l1\png-transparent-smile-emoji-face-mouth-perspiration-anxious-face-smiley-emoticon.png', 'rb') as f:
+    with open(r'flag.jpg', 'rb') as f:
         gulucuk = discord.File(f)
     await ctx.send(file=gulucuk)
 @bot.command()
